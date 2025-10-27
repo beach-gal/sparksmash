@@ -1,5 +1,10 @@
 // api/expand-idea.js
 // This is a Vercel serverless function that keeps your API key secure
+{
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" }
+  ]
+}
 
 export default async function handler(req, res) {
   // Only allow POST requests
